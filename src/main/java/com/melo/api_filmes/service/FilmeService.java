@@ -19,6 +19,46 @@ public class FilmeService {
                 .anoDeLancamento(2021)
                 .notaIMDB(8.0)
                 .build());
+
+        FILMES.add(FilmeModel.builder()
+                .id(2)
+                .titulo("Interestelar")
+                .genero("Ficção Científica")
+                .anoDeLancamento(2014)
+                .notaIMDB(8.7)
+                .build());
+
+        FILMES.add(FilmeModel.builder()
+                .id(3)
+                .titulo("O Poderoso Chefão")
+                .genero("Drama")
+                .anoDeLancamento(1972)
+                .notaIMDB(9.2)
+                .build());
+
+        FILMES.add(FilmeModel.builder()
+                .id(4)
+                .titulo("Batman: O Cavaleiro das Trevas")
+                .genero("Ação")
+                .anoDeLancamento(2008)
+                .notaIMDB(9.0)
+                .build());
+
+        FILMES.add(FilmeModel.builder()
+                .id(5)
+                .titulo("Matrix")
+                .genero("Ficção Científica")
+                .anoDeLancamento(1999)
+                .notaIMDB(8.7)
+                .build());
+
+        FILMES.add(FilmeModel.builder()
+                .id(6)
+                .titulo("Pulp Fiction")
+                .genero("Crime")
+                .anoDeLancamento(1994)
+                .notaIMDB(8.9)
+                .build());
     }
 
     public List<FilmeModel> listarTodos() {
