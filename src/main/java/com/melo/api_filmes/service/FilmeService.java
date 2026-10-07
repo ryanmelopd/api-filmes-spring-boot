@@ -99,6 +99,11 @@ public class FilmeService {
     }
 
     public void deletarFilme(Integer id) {
-        FILMES.removeIf(filme -> filme.getId().equals(id));
+        FilmeModel filme = FILMES.stream()
+                .filter(f -> f.getId().equals(id))
+                .findAny()
+                .orElseThrow(() -> new ExceptionNotFound("Filme não encontrado"));
+
+        FILMES.remove(filme);
     }
 }
