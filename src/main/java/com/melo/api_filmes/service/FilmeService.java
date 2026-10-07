@@ -68,6 +68,7 @@ public class FilmeService {
         filmeModel.setTitulo(filmeDto.getTitulo());
         filmeModel.setNotaIMDB(filmeDto.getNotaIMDB());
         filmeModel.setGenero(filmeDto.getGenero());
+        filmeModel.setAnoDeLancamento(filmeDto.getAnoDeLancamento());
 
         return filmeModel;
     }
